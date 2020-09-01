@@ -1,0 +1,13 @@
+{
+  "version": "v1",
+  "packages": {
+    "jpex": {
+      "signature": "18f0ff516917325c9f08e76795d6ba8d",
+      "file": true
+    },
+    "@jpex/babel-plugin": {
+      "signature": "b5110481688ede36da42a18a68e902c1",
+      "file": true
+    }
+  }
+}
