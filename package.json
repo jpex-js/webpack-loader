@@ -1,8 +1,22 @@
 {
   "name": "@jpex/webpack-loader",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "1.0.0",
   "main": "dist/index.js",
-  "repository": "git@github.com:jpex-js/webpack-loader.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jpex-js/webpack-loader.git"
+  },
+  "lint-staged": {
+    "linters": {
+      "src/**/*.{js,ts}": [
+        "eslint -c ./.eslintrc.js",
+        "git add"
+      ]
+    }
+  },
   "author": "Jack Ellis <jack.ellis@godaddy.com>",
   "license": "MIT",
   "scripts": {
@@ -31,21 +45,19 @@
     "ava": "^3.12.1",
     "awesome-typescript-loader": "^5.2.1",
     "eslint": "^7.7.0",
-    "jpex": "file:.yalc/jpex",
+    "jpex": "^4.0.0",
     "memfs": "^3.2.0",
     "rollup": "^2.26.8",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-node-resolve": "^5.2.0",
+    "semantic-release": "^17.1.1",
     "typescript": "^4.0.2",
     "webpack": "^4.44.1"
   },
   "dependencies": {
     "@babel/core": "^7.11.4",
     "@babel/plugin-syntax-typescript": "^7.10.4",
-    "@jpex/babel-plugin": "file:.yalc/@jpex/babel-plugin",
+    "@jpex-js/babel-plugin": "^1.0.0",
     "loader-utils": "^2.0.0"
-  },
-  "resolutions": {
-    "@jpex/babel-plugin": "file:.yalc/@jpex/babel-plugin"
   }
 }

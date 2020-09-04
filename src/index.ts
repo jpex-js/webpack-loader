@@ -17,7 +17,7 @@ const jpexWebpackLoader: loader.Loader = function jpexWebLoader(input: string, i
     plugins: [
       '@babel/plugin-syntax-typescript',
       [
-        '@jpex/babel-plugin',
+        '@jpex-js/babel-plugin',
         options,
       ],
     ],
