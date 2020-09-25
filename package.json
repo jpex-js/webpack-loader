@@ -1,5 +1,5 @@
 {
-  "name": "@jpex/webpack-loader",
+  "name": "@jpex-js/webpack-loader",
   "publishConfig": {
     "access": "public"
   },
